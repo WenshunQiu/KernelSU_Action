@@ -1,6 +1,7 @@
 name: Build Kernel
 on:
   watch:
+    if: sender = github.actor
     types: [started]
 
   workflow_dispatch:
